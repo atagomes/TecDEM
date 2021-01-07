@@ -19,13 +19,13 @@ fprintf(fid, ['Information for\t'  info.project_name(1:end-4) '\tDigital Elevati
 % ...
 %     '\n============================================\n'
 fprintf(fid, strcat('Name of Location\t:', info.project_name(1:end-4)));
-fprintf(fid, strcat('\nDEM Format\t\t:', area_info.Format));
+fprintf(fid, strcat('\nDEM Format\t\t:', area_info.FileType));
 fprintf(fid, strcat('\nNo. of Cols\t\t:', num2str(area_info.Width), '\t Pixels'));
 fprintf(fid, strcat('\nNo. of Rows\t\t:', num2str(area_info.Height), '\t Pixels'));
 fprintf(fid, strcat('\nResolution\t\t:',num2str(area_info.res), '\t meters'));
 
-fprintf(fid, strcat('\nNorth Edge Value\t:',num2str(area_info.TiePoints.WorldPoints.X), '\t '));
-fprintf(fid, strcat('\nSouth Edge Value\t:',num2str(area_info.TiePoints.WorldPoints.Y), '\t '));
+fprintf(fid, strcat('\nNorth Edge Value\t:',num2str(area_info.bbox(1,1)), '\t '));
+fprintf(fid, strcat('\nSouth Edge Value\t:',num2str(area_info.bbox(2,1)), '\t '));
 
 % fprintf(fid, '\n===========================================================================\n');
 

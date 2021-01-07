@@ -14,7 +14,7 @@ dem      = imfill(dem,8,'holes');
 
 info = evalin('base','info');
 savefile = strcat(info.path,'_DEM.mat');
-save(savefile,'dem','-v7.3')
+save(savefile,'dem')
 
 add_histroy({'DEM filling is finished'});
 add_comm_line();

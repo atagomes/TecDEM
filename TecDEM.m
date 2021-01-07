@@ -38,6 +38,7 @@ catch
     
     mnuopenproject =  uimenu(file_manu,'Label','Open Project','Callback',@open_data_set,'Accelerator','o');
     mnuimportdem =  uimenu(file_manu,'Label','Import DEM','Callback',@load_dem_info, 'Accelerator','I');
+    mnuimportnopromptdem =  uimenu(file_manu,'Label','Import DEM without prompt','Callback',@load_dem_info_noprompt, 'Accelerator','N');
     %     prsetting =  uimenu(file_manu,'Label','Settings','Callback',@project_setting,'Separator','on','Accelerator','S');
     
     prexport =  uimenu(file_manu,'Label','Export','Callback',@export_results, 'Accelerator','E');
@@ -111,7 +112,7 @@ catch
     
     helpp = uimenu(fig,'Label','Help');
     
-    uimenu(helpp,'Label','Contents','Callback',@Contents);
+    uimenu(helpp,'Label','Contents','Callback',@contents);
     uimenu(helpp,'Label','About TecDEM','Separator','on','Callback',@aboutus);
     
     
