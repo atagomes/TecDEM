@@ -26,4 +26,4 @@ end
 
 info = evalin('base','info');    
 savefile = strcat(info.path,'_CON.mat');
-save(savefile,'tzero1','-v7.3')
+save(savefile,'tzero1')

@@ -74,7 +74,7 @@ else
 
         info = evalin('base','info');
         savefile = strcat(info.path,strcat('_',num2str(td),'HYP.mat'));
-        save(savefile,'hyp_basin','-v7.3');
+        save(savefile,'hyp_basin');
         ret = 1;
     catch
         ret = 1;

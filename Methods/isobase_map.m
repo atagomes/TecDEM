@@ -15,7 +15,7 @@ isobase = convert_grid(dind,'cubic');
 
 assignin('base','isobase',isobase);
 
-info = evalin('base','info','-v7.3');
+info = evalin('base','info');
 savefile = strcat(info.path,'_ISO.mat');
 save(savefile,'isobase');
 

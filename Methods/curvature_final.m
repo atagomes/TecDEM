@@ -60,7 +60,7 @@ catch
     info = evalin('base','info');
 %     savefile = strcat(info.path,'_CRT.mat');
     savefile = strcat(info.path,'_',num2str(td),'CRT.mat');
-    save(savefile,'curvature','tind_basin','-v7.3');
+    save(savefile,'curvature','tind_basin');
 end
 
 % cla

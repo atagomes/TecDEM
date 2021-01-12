@@ -125,12 +125,12 @@ flowdir(nfrom) = nto;
 info = evalin('base','info');
 flowlen = ones(size(dem));
 savefile = strcat(info.path,'_LEN.mat');
-save(savefile,'flowlen','-v7.3')
+save(savefile,'flowlen')
 
 add_histroy({'Flow lengths along possible flow directions are saved.'});
 
 savefile = strcat(info.path,'_FLOW.mat');
-save(savefile,'flowdir','-v7.3')
+save(savefile,'flowdir')
 add_histroy({'Finished flow directions calculations'});
 add_histroy({'Calculating Concave flow directions'})
 count_inflow(flowdir);

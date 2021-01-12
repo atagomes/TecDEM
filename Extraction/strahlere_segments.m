@@ -54,7 +54,7 @@ while i
 end
 
 savefile = strcat(info.path,'_ADN.mat');
-save(savefile,'str_net','netwk_order_ind','str_map','-v7.3');
+save(savefile,'str_net','netwk_order_ind','str_map');
 
 add_histroy({strcat('A total of .',num2str(length(str_net)),' streams were exctracted successfully.')});
 add_histroy({'Strahler orders assigned successfully'});

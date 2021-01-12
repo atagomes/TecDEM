@@ -35,7 +35,7 @@ end
 
 info = evalin('base','info');
 savefile = strcat(info.path,'_AREA.mat');
-save(savefile,'area','-v7.3')
+save(savefile,'area')
 
 add_histroy({'Finished calculating area grid'});
 add_comm_line();

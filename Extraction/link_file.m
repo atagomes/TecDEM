@@ -63,10 +63,10 @@ clear flows
 
 info = evalin('base','info');
 savefile = strcat(info.path,'_FLOW.mat');
-save(savefile,'flowdir','-v7.3');
+save(savefile,'flowdir');
 
 savefile = strcat(info.path,'_LEN.mat');
-save(savefile,'flowlen','-v7.3')
+save(savefile,'flowlen')
 
 add_histroy({'Calculating Concave flow directions'})
 count_inflow(flowdir);

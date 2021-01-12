@@ -76,7 +76,7 @@ vertical_diss = rel;
 % assignin('base','vertical_diss',vertical_diss);
 info = evalin('base','info');
 savefile = strcat(info.path,'_VD.mat');
-save(savefile,'vertical_diss','-v7.3');
+save(savefile,'vertical_diss');
 
 add_histroy({'Vertical dissection grid computed successfully.'});
 

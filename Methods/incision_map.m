@@ -51,7 +51,7 @@ end
 
 info = evalin('base','info');
 savefile = strcat(info.path,'_INC.mat');
-save(savefile,'incision','-v7.3');
+save(savefile,'incision');
 
 add_histroy({'Finish calculating Incision Grid.'});
 % figure; imagesc(incision); axis image

@@ -66,7 +66,7 @@ end
 
 info = evalin('base','info');
 savefile = strcat(info.path,'_DND.mat');
-save(savefile,'dr_density','-v7.3');
+save(savefile,'dr_density');
 %
 add_histroy({'Finish calculating drainage density.'});
 %

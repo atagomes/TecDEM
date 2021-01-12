@@ -205,7 +205,7 @@ while any(~Igive)
     [IXf,m] = unique(IXf);
     IXn     = IXn(m); 
     
-    I  = ismembc(ic,IXf);
+    I  = ismembc_octave(ic,IXf);
     Igive(I) = true;
     icd(I) = IXn;
     Ireceive(Itemp) = true;
@@ -215,6 +215,10 @@ while any(~Igive)
 end
 end
 
+  function varargout = ismembc_octave (varargin)
+    varargout = cell (nargout, 1);
+    [varargout{:}] = ismember (varargin{:});
+  endfunction
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [ic,icd] = routeflatsmulti(flats)

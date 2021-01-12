@@ -24,7 +24,7 @@ catch
     assignin('base','td',td);
 end
 load_grid_base('base','ADN')
-load_grid_base('base',strcat(num2str(td),'CRT'))
+%%%%%%%TADEU   load_grid_base('base',strcat(num2str(td),'CRT'))
 % load_grid_base('base','CRT');
 try
 curvature_final();

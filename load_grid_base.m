@@ -18,6 +18,8 @@ function load_grid_base(from,grd)
 %
 info = evalin('base','info');
 fls = strcat(info.path,'_',grd,'.mat');
+add_comments({cstrcat("Reading ", fls, "...")});
 try
     evalin(from,strcat('load(''',fls,''')'))   
 end
+add_comments({"Done!"});

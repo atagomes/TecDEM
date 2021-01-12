@@ -66,7 +66,7 @@ assignin('base','boundary',boundary);
 
 savefile = strcat(info.path,'_',num2str(td),'BSN.mat');
 % savefile = strcat(info.path,'_BSN.mat');
-save(savefile,'basinmatrix','td','boundary','-v7.3');
+save(savefile,'basinmatrix','td','boundary');
 
 add_histroy({strcat('A total of .',num2str(length(netwk_order_ind(td).ind)),' basin(s) are extracted')});
 
