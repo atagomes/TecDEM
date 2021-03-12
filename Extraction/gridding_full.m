@@ -134,4 +134,5 @@ save(savefile,'flowdir')
 add_histroy({'Finished flow directions calculations'});
 add_histroy({'Calculating Concave flow directions'})
 count_inflow(flowdir);
+add_histroy({'Finished Concave flow directions calculations'});
 add_comm_line();
