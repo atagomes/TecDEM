@@ -1,6 +1,7 @@
 function export_tind(varargin)
 
 tind_basin = evalin('base','tind_basin');
+info = evalin('base','info');
 outmartix = [];
 
 for i=1:1:length(tind_basin)
